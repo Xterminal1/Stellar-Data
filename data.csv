@@ -1,4 +1,25 @@
-Star name,                          Radius (Rsol),              Spectral type,                  Proper name (if applicable)
-WOH G64,                            1540,                       N/A,                            N/A
-VY Canis Majoris,                   1420,                       N/A,                            N/A
-AH Scorpii,                         1411,                       N/A,                            N/A
+Object,Size (km),Classification,Notes,Source
+134340 Pluto,2376.6,Trans-Neptunian object,Largest trans-Neptunian object,[1603.00821] Mean radius and shape of Pluto and Charon from New Horizons images
+136199 Eris,"2,326",Trans-Neptunian object,,"Size, density, albedo and atmosphere limit of dwarf planet Eris from a stellar occultation"
+136108 Haumea,"~1,559",Trans-Neptunian object,,"The most accurate semiaxes for Haumea are from Haumea's Shape, Composition, and Internal Structure - IOPscience (a=1050, b=840, c=537). Using the geometric mean method, we can find that the radius of Haumea is cubeRoot(1050*840*537), or ~779.4 km, and the diameter is ~1559 km."
+136472 Makemake,"1,434",Trans-Neptunian object,,"[1034.1041] On the size, shape, and density of dwarf planet Makemake
+1,434 km is the calculated equatorial diameter from this paper."
+225088 Gonggong,"1,230",Trans-Neptunian object,,[1903.05439] The mass and density of the dwarf planet (225088) 2007 OR10
+Charon,"1,212",Natural satellite,Moon of 134340 Pluto,[1603.00821] Mean radius and shape of Pluto and Charon from New Horizons images
+50000 Quaoar,"1,090",Trans-Neptunian object,,[2401.12679] The visible and thermal light curve of the large Kuiper belt object (50000) Quaoar
+90482 Orcus,910,Trans-Neptunian object,,"Medium-sized Satellites of Large Kuiper Belt Objects - IOPscience
+This diameter is estimated by using the ALMA array. The Herschel Space Telescope's estimated diameter for Orcus (958.4km) is likely less accurate because the HST has less spatial resolution and sensitivity than the ALMA."
+90377 Sedna,906,Trans-Neptunian object,,"""TNOs are Cool"": A survey of the trans-Neptunian region. IX. Thermal properties of Kuiper belt objects and Centaurs from combined Herschel and Spitzer observations - NASA/ADS"
+Dysnomia,615,Natural satellite,Moon of 136199 Eris,
+Vanth,443,Natural satellite,Moon of 90482 Orcus,"[1810.08977] A stellar occultation by Vanth, a satellite of (90482) Orcus"
+Hi'iaka,310,Natural satellite,Moon of 136108 Haumea,
+Weywot,200,Natural satellite,Moon of 50000 Quaoar,
+S/2015 (136472) 1,175,Natural satellite,Moon of 136472 Makemake,The diameter assumes an albedo of 4%.
+Namaka,170,Natural satellite,Moon of 136108 Haumea,
+Xiangliu,40-100,Natural satellite,Moon of 225088 Gonggong,
+Hydra,38.43,Natural satellite,Moon of 134340 Pluto,Geometric mean of dimensions found on Wikipedia
+Nix,37.19,Natural satellite,Moon of 134340 Pluto,Geometric mean of dimensions found on Wikipedia
+Kerberos,11.96,Natural satellite,Moon of 134340 Pluto,Geometric mean of dimensions found on Wikipedia
+Styx,10.48,Natural satellite,Moon of 134340 Pluto,Geometric mean of dimensions found on Wikipedia
+120347 Salacia,,Trans-Neptunian object,,
+Actaea,,Natural satellite,Moon of 120347 Salacia,
