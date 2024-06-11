@@ -186,7 +186,7 @@ Psi Serpentis A,G5V,,0.9832,,,Radius from DR3
 Kepler-1 A,G0V,,1.0439,,,Radius from DR3
 IM Pegasi (secondary component),G (likely inaccurate),,0.5311,,,Radius from DR3
 HN Pegasi,G0V,,1.0462,,,Radius from DR3
-11 Leonis Minoris A,G8Va,,1.0071,,,Radius from DR3
+11 Leonis Minoris A,G8Va,0.866,1.0071,0.7892,7.9,Radius from DR3
 11 Leonis Minoris B,M4,,,,,
 Delta Indi B,,,,,,
 Kepler-1629,,,,,,
