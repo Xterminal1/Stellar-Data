@@ -1,4 +1,4 @@
-Star,Spectral class,Distance (pc),Mass (M☉),Radius (R☉),Luminosity (L☉),log(L/L☉),Source
+Star,Spectral class,Distance (pc),Mass (M☉),Radius (R☉),Luminosity (L☉),log(L☉/1),Source
 Gamma Cephei B,M4V,,,not found*,,#NUM!,"*radius not found in Wikipedia, DR3, or DR2; Teff and L are not available to calculate radius using Stefan-Boltzmann law."
 CoRoT-7 B,M4V,,,not available,,#NUM!,"*couldn't find in Wiki, DR3, or DR2; not able to calculate using Stefan-Boltzmann law due to unavailable Lsol and Teff"
 Pi2 Ursae Minoris A,F2,128.602,1.87,3.82,16.519,1.2180,rSun & lSun (DR2) | d (SIMBAD) | mSun (WP)
