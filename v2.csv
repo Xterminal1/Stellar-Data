@@ -1,414 +1,641 @@
-Star,Spectral class,Mass (L☉),Radius (R☉),Luminosity (L☉),Age (Gyr),Source
-Gamma Cephei B,M4V,,not found*,,,"*radius not found in Wikipedia, DR3, or DR2; Teff and L are not available to calculate radius using Stefan-Boltzmann law."
-CoRoT-7 B,M4V,,not available,,,"*couldn't find in Wiki, DR3, or DR2; not able to calculate using Stefan-Boltzmann law due to unavailable Lsol and Teff"
-Pi2 Ursae Minoris A,F2,,3.82,,,"Radius from DR2, blank in DR3"
-Epsilon Coronae Australis A,F4VFe-0.8+,,2.1921,,,Radius from DR3
-Eta Arietis,F5V,,2.01,,,"Radius from DR2, left blank in DR3
-2.01 Rsol (DR2) size greatly differs to 0.98 Rsol (Wikipedia)"
-48 Cassiopeiae A,A2V,,~1.92,,,"Radius left blank in Wikipedia, DR3, and DR2; calculated using Stefan-Boltzmann law
-
-sqrt(17.8) * ((5,772/8,538)^2) = 1.9281"
-17 Cygni A,F5.5IV-V,,1.626,,,Radius from DR3
-39 Leonis A,F6V,,1.2798,,,Radius from DR3
-Kepler-15,G8IV-V,,1.2738,,,Radius from DR3
-Delta Trianguli A,G0.5VFe-0.5,,1.2184,,,Radius from DR3
-HD 92788,G6V,,1.1699,,,Radius from DR3
-VW Cephei A,G8V,,1.15,,,"Radius from DR2, left blank in DR3"
-WASP-16,G3V,,1.0986,,,Radius from DR3
-K2-56,F9,,1.0899,,,Radius from DR3
-HD 4308,G6VFe-0.9,,1.0836,,,Radius from DR3
-Kepler-160,G5,,1.0791,,,Radius from DR3
-51 Arietis,G8V,,1.0726,,,Radius from DR3
-Theta Serpentis C,G0V,,1.0637,,,Radius from DR3
-WASP-37,G2V,,1.063,,,Radius from DR3
-b Draconis B,F5V,,1.06,,,"Radius from DR2, left blank in DR3"
-HD 49674,G3V,,1.0398,,,Radius from DR3
-14 Herculis,K0V,,1.027,,,Radius from DR3
-WASP-19,G8V,,1.0198,,,Radius from DR3
-HD 7199,K1IV,,1.0193,,,Radius from DR3
-10 Canum Venaticorum,F9V_Fe-0.3,,1.0179,,,Radius from DR3
-Alpha Mensae A,G7V,,1.0143,,,Radius from DR3
-OU Geminorum Aa,K3Vk,,1.0139,,,"Radius from DR2, last 2 digits calculated using Stefan-Boltzmann law"
-V478 Hydrae,G1/2V,,1.013,,,Radius from DR3
-WASP-85 A,G5,,1.0115,,,Radius from DR3
-Zeta2 Reticuli,G1V,,1.0033,,,Radius from DR3
-WASP-8 A,G6,,1.0006,,,Radius from DR3
-Sun,G2V,,1,,,
-61 Virginis,G7V,,0.9962,,,Radius from DR3
-HD 77338,K0IV,,0.9838,,,Radius from DR3
-HD 164922,G9V,,0.9834,,,Radius from DR3
-HD 37124,G4IV-V,,0.9789,,,Radius from DR3
-DE Boötis A,K0.5V,,0.9784,,,Radius from DR3
-CoRoT-9,G3V,,0.9641,,,Radius from DR3
-FL Lyrae B,G8,,0.963,,,"Radius from Wikipedia, left blank in DR3 & DR2"
-HD 30669,G8/K0V,,0.9628,,,Radius from DR3
-HD 81040,G0V,,0.9609,,,Radius from DR3
-Kappa1 Ceti,G5V,,0.96,,,"Radius from DR2, left blank in DR3"
-WASP-44,G8V,,0.9555,,,Radius from DR3
-WASP-104,G8,,0.9421,,,Radius from DR3
-WASP-36,G2,,0.9415,,,Radius from DR3
-Epsilon Sagittarii B,B9.5III,,~0.932,,,"Radius not in Wikipedia, DR3, or DR2; calculated using Stefan-Boltzmann law.
+Star,Spectral class,Distance (pc),Mass (M☉),Radius (R☉),Luminosity (L☉),log(L/L☉),Source
+Gamma Cephei B,M4V,,,not found*,,#NUM!,"*radius not found in Wikipedia, DR3, or DR2; Teff and L are not available to calculate radius using Stefan-Boltzmann law."
+CoRoT-7 B,M4V,,,not available,,#NUM!,"*couldn't find in Wiki, DR3, or DR2; not able to calculate using Stefan-Boltzmann law due to unavailable Lsol and Teff"
+Pi2 Ursae Minoris A,F2,128.602,1.87,3.82,16.519,1.2180,rSun & lSun (DR2) | d (SIMBAD) | mSun (WP)
+Epsilon Coronae Australis A,F4VFe-0.8+,31.477,1.593,2.1921,8.901,0.9494,DR3
+Eta Arietis,F5V,29.9955,1.21,2.01,6.128,0.7873,rSun & lSun (DR2) | d (SIMBAD) | mSun (WP)
+48 Cassiopeiae A,A2V,37.8829,1.93,3.73,10.735,1.0308,rSun & lSun (DR2) | d (SIMBAD) | mSun (WP) || DR2 more recent than listed WP sources.
+17 Cygni A,F5.5IV-V,20.9738,1.289,1.626,3.737,0.5725,DR3
+39 Leonis A,F6V,22.2713,1.1057823,1.2798654,1.9717,0.2948,DR3 (FLAME)
+Kepler-15,G8IV-V,743.0286,0.927,1.2738,1.369,0.1364,DR3
+Delta Trianguli A,G0V,10.911,0.8-1?,1.2184684,1.2265,0.0887,rSun & lSun (DR2 FLAME) | d (SIMBAD) | mSun (WP source)
+HD 92788,G6V,34.4881,0.909,1.1699,1.202,0.0799,DR3
+VW Cephei A,G8V,,,1.15,,#NUM!,"Radius from DR2, left blank in DR3"
+WASP-16,G3V,,,1.0986,,#NUM!,Radius from DR3
+K2-56,F9,,,1.0899,,#NUM!,Radius from DR3
+HD 4308,G6VFe-0.9,,,1.0836,,#NUM!,Radius from DR3
+Kepler-160,G5,,,1.0791,,#NUM!,Radius from DR3
+51 Arietis,G8V,,,1.0726,,#NUM!,Radius from DR3
+Theta Serpentis C,G0V,,,1.0637,,#NUM!,Radius from DR3
+WASP-37,G2V,,,1.063,,#NUM!,Radius from DR3
+b Draconis B,F5V,,,1.06,,#NUM!,"Radius from DR2, left blank in DR3"
+HD 49674,G3V,,,1.0398,,#NUM!,Radius from DR3
+14 Herculis,K0V,,,1.027,,#NUM!,Radius from DR3
+WASP-19,G8V,,,1.0198,,#NUM!,Radius from DR3
+HD 7199,K1IV,,,1.0193,,#NUM!,Radius from DR3
+10 Canum Venaticorum,F9V_Fe-0.3,,,1.0179,,#NUM!,Radius from DR3
+Alpha Mensae A,G7V,,,1.0143,,#NUM!,Radius from DR3
+OU Geminorum Aa,K3Vk,,,1.0139,,#NUM!,"Radius from DR2, last 2 digits calculated using Stefan-Boltzmann law"
+V478 Hydrae,G1/2V,,,1.013,,#NUM!,Radius from DR3
+WASP-85 A,G5,,,1.0115,,#NUM!,Radius from DR3
+Zeta2 Reticuli,G1V,,,1.0033,,#NUM!,Radius from DR3
+WASP-8 A,G6,,,1.0006,,#NUM!,Radius from DR3
+Sun,G2V,0.00000484814,1,1,1,0.0000,
+61 Virginis,G7V,,,0.9962,,#NUM!,Radius from DR3
+HD 77338,K0IV,,,0.9838,,#NUM!,Radius from DR3
+HD 164922,G9V,,,0.9834,,#NUM!,Radius from DR3
+HD 37124,G4IV-V,,,0.9789,,#NUM!,Radius from DR3
+DE Boötis A,K0.5V,,,0.9784,,#NUM!,Radius from DR3
+CoRoT-9,G3V,,,0.9641,,#NUM!,Radius from DR3
+FL Lyrae B,G8,,,0.963,,#NUM!,"Radius from Wikipedia, left blank in DR3 & DR2"
+HD 30669,G8/K0V,,,0.9628,,#NUM!,Radius from DR3
+HD 81040,G0V,,,0.9609,,#NUM!,Radius from DR3
+Kappa1 Ceti,G5V,,,0.96,,#NUM!,"Radius from DR2, left blank in DR3"
+WASP-44,G8V,,,0.9555,,#NUM!,Radius from DR3
+WASP-104,G8,,,0.9421,,#NUM!,Radius from DR3
+WASP-36,G2,,,0.9415,,#NUM!,Radius from DR3
+Epsilon Sagittarii B,B9.5III,,,~0.93,,#NUM!,"Radius not in Wikipedia, DR3, or DR2; calculated using Stefan-Boltzmann law.
 
 sqrt(0.89) * ((5,772/5,807)^2)"
-WASP-45,K2V,,0.9304,,,Radius from DR3
-WASP-25,G4,,0.9303,,,Radius from DR3
-Zeta1 Reticuli,G2.5VHdel1 ,,0.93,,,Radius from DR3
-Tau Cygni B,G0V,,0.93,,,"Radius from Wikipedia, left blank in DR3 & DR2"
-54 Piscium A,K0.5V,,0.9294,,,Radius from DR3
-BD−10°3166,K3V,,0.929,,,Radius from DR3
-HD 1237 A,G8V,,0.9266,,,Radius from DR3
-Phecda B (Gamma Ursae Majoris B),K2V,,~0.9187,,,"Radius not in Wikipedia, DR3, or DR2; calculated using Stefan-Boltzmann law.
+WASP-45,K2V,,,0.9304,,#NUM!,Radius from DR3
+WASP-25,G4,,,0.9303,,#NUM!,Radius from DR3
+Zeta1 Reticuli,G2.5VHdel1 ,,,0.93,,#NUM!,Radius from DR3
+Tau Cygni B,G0V,,,0.93,,#NUM!,"Radius from Wikipedia, left blank in DR3 & DR2"
+54 Piscium A,K0.5V,,,0.9294,,#NUM!,Radius from DR3
+BD−10°3166,K3V,,,0.929,,#NUM!,Radius from DR3
+HD 1237 A,G8V,,,0.9266,,#NUM!,Radius from DR3
+Phecda B (Gamma Ursae Majoris B),K2V,,,~0.91,,#NUM!,"Radius not in Wikipedia, DR3, or DR2; calculated using Stefan-Boltzmann law.
 
 sqrt(0.397) * ((5,772/4,780)^2)"
-Zeta Herculis B,G7V,,0.915-0.92,,,"Radius from Wikipedia, accurate source I guess? Consistent with result from Stefan-Boltzmann law"
-Xi Ursae Majoris Ba,G2V,,~0.9139,,,"Radius from Wikipedia, left blank in DR3, last 2 digits calculated from Stefan-Boltzmann law"
-Kepler-71,G8V,,0.9135,,,Radius from DR3
-Kepler-409,K0V,,0.913,,,Radius from DR3
-Kepler-20,G5V,,0.9117,,,Radius from DR3
-Kepler-63,G2V,,0.9089,,,Radius from DR3
-V439 Andromedae,G8,,0.9077,,,Radius from DR3
-XO-1,G1V,,0.9063,,,Radius from DR3
-61 Ursae Majoris,G8V,,0.9058,,,
-WASP-67,K0V,,0.9026,,,Radius from DR3
-WASP-42,K1V,,0.9008,,,Radius from DR3
-Delta Capricorni Ab,G/K,,~0.9,,,"Radius from Wikipedia, need DR3 check"
-HD 137388,K2IV,,0.899,,,Radius from DR3
-Alpha Coronae Borealis B,G5V,,~0.89,,,"Radius from Wikipedia, need DR3 check"
-HD 130322,K0V,,0.8874,,,Radius from DR3
-CoRoT-2,G7V,,0.8814,,,Radius from DR3
-HAT-P-27,G8,,0.8782,,,Radius from DR3
-CoRoT-10,K1V,,0.8732,,,
-Tau1 Hydrae B,K0,,0.8725,,,Radius from DR3
-12 Ophiuchi,K1V,,0.8723,,,Radius from DR3
-107 Piscium,K1V,,0.8698,,,Radius from DR3
-Epsilon Coronae Australis B,F4VFe-0.8+,,0.869,,,"Radius from Wikipedia, pretty accurate I guess?"
-Alpha Centauri B,K1V,,0.8591,,,"Radius from https://arxiv.org/pdf/2104.10086, accurate source even though radius left blank in DR3"
-HD 3167,K0V,,0.8558,,,Radius from DR3
-Kepler-22,G5V,,0.8558,,,Radius from DR3
-HD 218566,K3V,,0.8494,,,Radius from DR3
-WASP-52,K2V,,0.8489,,,Radius from DR3
-Xi Boötis A,G7Ve,,0.8488,,,Radius from DR3
-V672 Lyrae,K0V,,0.8474,,,Radius from DR3
-Pr0211,K1V,,0.8435,,,Radius from DR3
-V759 Carinae,G,,0.8429,,,Radius from DR3
-41 G. Arae A,G9V,,0.8395,,,Radius from DR3
-HAT-P-3,K1V,,0.8391,,,Radius from DR3
-Eta Capricorni B,F2V,,0.839,,,Radius from DR3; eta Cap A is 2.64 Rsol
-Omicron2 Eridani A,K0.5V,,0.8341,,,Radius from DR3
-Kepler-421,G7,,0.8334,,,Radius from DR3
-WASP-11 A,K3V,,0.8308,,,Radius from DR3
-K2-58,K2,,0.8293,,,Radius from DR3
-Sigma Draconis,K0V,,0.827,,,Radius from DR3
-CoRoT-7 A,G9V,,0.8266,,,Radius from DR3
-Lupus-TR 3,K1V,,0.82,,,"Radius from Wikipedia, left blank in DR3 & DR2
+Zeta Herculis B,G7V,,,0.915-0.92,,#NUM!,"Radius from Wikipedia, accurate source I guess? Consistent with result from Stefan-Boltzmann law"
+Xi Ursae Majoris Ba,G2V,,,~0.9139,,#NUM!,"Radius from Wikipedia, left blank in DR3, last 2 digits calculated from Stefan-Boltzmann law"
+Kepler-71,G8V,,,0.9135,,#NUM!,Radius from DR3
+Kepler-409,K0V,,,0.913,,#NUM!,Radius from DR3
+Kepler-20,G5V,,,0.9117,,#NUM!,Radius from DR3
+Kepler-63,G2V,,,0.9089,,#NUM!,Radius from DR3
+V439 Andromedae,G8,,,0.9077,,#NUM!,Radius from DR3
+XO-1,G1V,,,0.9063,,#NUM!,Radius from DR3
+61 Ursae Majoris,G8V,,,0.9058,,#NUM!,
+WASP-67,K0V,,,0.9026,,#NUM!,Radius from DR3
+WASP-42,K1V,,,0.9008,,#NUM!,Radius from DR3
+Delta Capricorni Ab,G/K,,,~0.9,,#NUM!,"Radius from Wikipedia, need DR3 check"
+HD 137388,K2IV,,,0.899,,#NUM!,Radius from DR3
+Alpha Coronae Borealis B,G5V,,,~0.89,,#NUM!,"Radius from Wikipedia, need DR3 check"
+HD 130322,K0V,,,0.8874,,#NUM!,Radius from DR3
+CoRoT-2,G7V,,,0.8814,,#NUM!,Radius from DR3
+HAT-P-27,G8,,,0.8782,,#NUM!,Radius from DR3
+CoRoT-10,K1V,,,0.8732,,#NUM!,
+Tau1 Hydrae B,K0,,,0.8725,,#NUM!,Radius from DR3
+12 Ophiuchi,K1V,,,0.8723,,#NUM!,Radius from DR3
+107 Piscium,K1V,,,0.8698,,#NUM!,Radius from DR3
+Epsilon Coronae Australis B,F4VFe-0.8+,,,0.869,,#NUM!,"Radius from Wikipedia, pretty accurate I guess?"
+Alpha Centauri B,K1V,,,0.8591,,#NUM!,"Radius from https://arxiv.org/pdf/2104.10086, accurate source even though radius left blank in DR3"
+HD 3167,K0V,,,0.8558,,#NUM!,Radius from DR3
+Kepler-22,G5V,,,0.8558,,#NUM!,Radius from DR3
+HD 218566,K3V,,,0.8494,,#NUM!,Radius from DR3
+WASP-52,K2V,,,0.8489,,#NUM!,Radius from DR3
+Xi Boötis A,G7Ve,,,0.8488,,#NUM!,Radius from DR3
+V672 Lyrae,K0V,,,0.8474,,#NUM!,Radius from DR3
+Pr0211,K1V,,,0.8435,,#NUM!,Radius from DR3
+V759 Carinae,G,,,0.8429,,#NUM!,Radius from DR3
+41 G. Arae A,G9V,,,0.8395,,#NUM!,Radius from DR3
+HAT-P-3,K1V,,,0.8391,,#NUM!,Radius from DR3
+Eta Capricorni B,F2V,,,0.839,,#NUM!,Radius from DR3; eta Cap A is 2.64 Rsol
+Omicron2 Eridani A,K0.5V,,,0.8341,,#NUM!,Radius from DR3
+Kepler-421,G7,,,0.8334,,#NUM!,Radius from DR3
+WASP-11 A,K3V,,,0.8308,,#NUM!,Radius from DR3
+K2-58,K2,,,0.8293,,#NUM!,Radius from DR3
+Sigma Draconis,K0V,,,0.827,,#NUM!,Radius from DR3
+CoRoT-7 A,G9V,,,0.8266,,#NUM!,Radius from DR3
+Lupus-TR 3,K1V,,,0.82,,#NUM!,"Radius from Wikipedia, left blank in DR3 & DR2
 Source: https://iopscience.iop.org/article/10.1086/529519"
-AU Microscopii,M1VeBa1 ,,0.82,,,"Radius from https://arxiv.org/pdf/2304.09642 (2023), left blank in DR3, 0.61 in DR2 (2014-2016) "
-WASP-6,G8V,,0.8197,,,Radius from DR3
-HD 156668,K3V,,0.8187,,,Radius from DR3
-V1703 Aquilae,K1/2V,,0.8119,,,Radius from DR3
-AB Doradus A,K0V,,0.81,,,Radius from DR2
-HD 7924,K0.5V,,0.8098,,,Radius from DR3
-HAT-P-19,K1V,,0.8013,,,Radius from DR3
-Tau Ceti,G8V,,0.796,,,"Radius from https://arxiv.org/pdf/2004.02343, left  blank in DR3 & DR2; consistent with Stefan-Boltzmann law"
-Kepler-29,G7,,0.7952,,,Radius from DR3
-Mu Cassiopeiae A,G5Vb,,0.7894,,,"Radius from https://iopscience.iop.org/article/10.3847/1538-4357/abc172, left blank in DR3 & DR2; last 1 decimal place calculated using Stefan-Boltzmann law"
-HD 97658,K1V,,0.7872,,,Radius from DR3
-83 Leonis B,K2V,,0.7871,,,Radius from DR3
-Kepler-35 B,G,,0.7861,,,Radius from https://arxiv.org/pdf/1204.3955; not in DR3 & DR2
-HD 219134,K3V,,0.7846,,,Radius from DR3
-Kepler-390,G5,,0.7823,,,Radius from DR3
-Gliese 570 A,K4V,,0.782,,,Radius from DR3
-Regulus B (Alpha Leonis B),K2V,,0.7815,,,Radius from DR3
-Epsilon Eridani,K2V,,0.7769,,,Radius from DR3
-Kepler-444 A,K0V,,0.7748,,,Radius from DR3
-p Eridani B,K2V,,0.7736,,,Radius from DR3
-36 Ophiuchi A,K2V,,0.7698,,,Radius from DR3
-36 Ophiuchi B,K1V,,0.7682,,,Radius from DR3
-Kepler-102,K3V,,0.7658,,,Radius from DR3
-Epsilon Indi A,K5V,,0.7631,,,Radius from DR3
-p Eridani A,K2V,,0.755,,,Radius from DR3
-Kepler-78,K2.5V,,0.7463,,,Radius from DR3
-Chi Draconis B,K0V,,0.7351,,,"Radius from Wikipedia (0.73) , blank in DR3 & DR2; also used Stefan-Boltzmann law to calculate last two decimal places (0.7351)"
-Iota Pegasi Ab,G8V,,0.73,,,"Radius from Wikipedia, blank in DR3 & DR2, no Teff to use Stefan-Boltzmann law"
-Kepler-67,G9V,,0.7236,,,Radius from DR3
+AU Microscopii,M1VeBa1 ,,,0.82,,#NUM!,"Radius from https://arxiv.org/pdf/2304.09642 (2023), left blank in DR3, 0.61 in DR2 (2014-2016) "
+WASP-6,G8V,,,0.8197,,#NUM!,Radius from DR3
+HD 156668,K3V,,,0.8187,,#NUM!,Radius from DR3
+V1703 Aquilae,K1/2V,,,0.8119,,#NUM!,Radius from DR3
+AB Doradus A,K0V,,,0.81,,#NUM!,Radius from DR2
+HD 7924,K0.5V,,,0.8098,,#NUM!,Radius from DR3
+HAT-P-19,K1V,,,0.8013,,#NUM!,Radius from DR3
+Tau Ceti,G8V,,,0.796,,#NUM!,"Radius from https://arxiv.org/pdf/2004.02343, left  blank in DR3 & DR2; consistent with Stefan-Boltzmann law"
+Kepler-29,G7,,,0.7952,,#NUM!,Radius from DR3
+Mu Cassiopeiae A,G5Vb,,,0.7894,,#NUM!,"Radius from https://iopscience.iop.org/article/10.3847/1538-4357/abc172, left blank in DR3 & DR2; last 1 decimal place calculated using Stefan-Boltzmann law"
+HD 97658,K1V,,,0.7872,,#NUM!,Radius from DR3
+83 Leonis B,K2V,,,0.7871,,#NUM!,Radius from DR3
+Kepler-35 B,G,,,0.7861,,#NUM!,Radius from https://arxiv.org/pdf/1204.3955; not in DR3 & DR2
+HD 219134,K3V,,,0.7846,,#NUM!,Radius from DR3
+Kepler-390,G5,,,0.7823,,#NUM!,Radius from DR3
+Gliese 570 A,K4V,,,0.782,,#NUM!,Radius from DR3
+Regulus B (Alpha Leonis B),K2V,,,0.7815,,#NUM!,Radius from DR3
+Epsilon Eridani,K2V,,,0.7769,,#NUM!,Radius from DR3
+Kepler-444 A,K0V,,,0.7748,,#NUM!,Radius from DR3
+p Eridani B,K2V,,,0.7736,,#NUM!,Radius from DR3
+36 Ophiuchi A,K2V,,,0.7698,,#NUM!,Radius from DR3
+36 Ophiuchi B,K1V,,,0.7682,,#NUM!,Radius from DR3
+Kepler-102,K3V,,,0.7658,,#NUM!,Radius from DR3
+Epsilon Indi A,K5V,,,0.7631,,#NUM!,Radius from DR3
+p Eridani A,K2V,,,0.755,,#NUM!,Radius from DR3
+Kepler-78,K2.5V,,,0.7463,,#NUM!,Radius from DR3
+Chi Draconis B,K0V,,,0.7351,,#NUM!,"Radius from Wikipedia (0.73) , blank in DR3 & DR2; also used Stefan-Boltzmann law to calculate last two decimal places (0.7351)"
+Iota Pegasi Ab,G8V,,,0.73,,#NUM!,"Radius from Wikipedia, blank in DR3 & DR2, no Teff to use Stefan-Boltzmann law"
+Kepler-67,G9V,,,0.7236,,#NUM!,Radius from DR3
 "Kepler-1520
-(not in ILMP)",K4V,,0.6805,,,Radius from DR3
-AK Pictoris B,K3,,0.6787,,,"Radius from DR3,
+(not in ILMP)",K4V,,,0.6805,,#NUM!,Radius from DR3
+AK Pictoris B,K3,,,0.6787,,#NUM!,"Radius from DR3,
 AK Pictoris A radius = 1.08 (DR2, left blank in DR3)"
-36 Ophiuchi C,K5V,,0.6766,,,Radius from DR3
-Xi Boötis B,K5Ve,,0.6591,,,Radius from DR3
-VW Cephei B,K0V,,0.6416,,,Radius from DR3
-Pi2 Ursae Minoris B,G0,,0.4979,,,Radius from DR3
-AR Scorpii (red dwarf),M5,,0.2224,,,Radius from DR3
-Kepler-183,,,,,,
-Kepler-1303,,,,,,
-Kepler-358,,,,,,
-Kepler-1016,,,,,,
-Kepler-175,,,,,,
-Kepler-325,,,,,,
-Kepler-1573,,,,,,
-Kepler-1441,,,,,,
-HIP 91258,,,,,,
-Kepler-276,,,,,,
-Kepler-223,G5V,,2.1504,,,Radius from DR3
-Kepler-1156,,,,,,
-Kepler-232,,,,,,
-Kepler-154,,,,,,
-Kepler-257,,,,,,
-Kepler-347,,,,,,
-Kepler-291,,,,,,
-Kepler-371,G5V*,,1.2598,,,"Radius from DR3
+36 Ophiuchi C,K5V,,,0.6766,,#NUM!,Radius from DR3
+Xi Boötis B,K5Ve,,,0.6591,,#NUM!,Radius from DR3
+VW Cephei B,K0V,,,0.6416,,#NUM!,Radius from DR3
+Pi2 Ursae Minoris B,G0,,,0.4979,,#NUM!,Radius from DR3
+AR Scorpii (red dwarf),M5,,,0.2224,,#NUM!,Radius from DR3
+Kepler-183,,,,,,#NUM!,
+Kepler-1303,,,,,,#NUM!,
+Kepler-358,,,,,,#NUM!,
+Kepler-1016,,,,,,#NUM!,
+Kepler-175,,,,,,#NUM!,
+Kepler-325,,,,,,#NUM!,
+Kepler-1573,,,,,,#NUM!,
+Kepler-1441,,,,,,#NUM!,
+HIP 91258,,,,,,#NUM!,
+Kepler-276,,,,,,#NUM!,
+Kepler-223,G5V,,,2.1504,,#NUM!,Radius from DR3
+Kepler-1156,,,,,,#NUM!,
+Kepler-232,,,,,,#NUM!,
+Kepler-154,,,,,,#NUM!,
+Kepler-257,,,,,,#NUM!,
+Kepler-347,,,,,,#NUM!,
+Kepler-291,,,,,,#NUM!,
+Kepler-371,G5V*,,,1.2598,,#NUM!,"Radius from DR3
 *spectral class calculated based on mass (Msol) and age (Gyr)"
-Kepler-344,,,,,,
-Kepler-1619,,,,,,
-Kepler-588,,,,,,
-HD 27631,G3IV/V,,1.0996,,,Radius from DR3
-HD 216770,G9VCN+1,,0.9681,,,Radius from DR3
-HD 98649,G3/5V,,1.0296,,,Radius from DR3
-Kepler-228,,,,,,
-Kepler-1500,,,,,,
-Kepler-1623,,,,,,
-Kepler-157,,,,,,
-Kepler-287,,,,,,
-Kepler-86,F9,,0.9554,,,Radius from DR3
-HD 290327,G0/G8V,,0.9452,,,Radius from DR3
-Kepler-108 B,,,,,,
-79 Ceti A,G2/8V,,1.5957,,,Radius from DR3
-Kepler-864,,,,,,
-Kepler-365,,,,,,
-Kepler-1099,,,,,,
-HD 46375 A,G9V,,0.9365,,,Radius from DR3
-HIP 14810,G6V,,1.0265,,,Radius from DR3
-Kepler-1129,,,,,,
-Omicron Draconis B,G9IIIFe-0.5,,1.2945,,,Radius from DR3
-Psi Serpentis A,G5V,,0.9832,,,Radius from DR3
-9 Ceti,G3V,,1.0756,,,Radius from DR3
-Kepler-1 A,G0V,,1.0439,,,Radius from DR3
-IM Pegasi (secondary component),G (likely inaccurate),,0.5311,,,Radius from DR3
-HN Pegasi,G0V,,1.0462,,,Radius from DR3
-11 Leonis Minoris A,G8Va,0.866,1.0071,0.7892,7.9,Radius from DR3
-11 Leonis Minoris B,M4,,,,,
-Delta Indi B,,,,,,
-Kepler-1629,,,,,,
-Kepler-603,,,,,,
-HD 7449 A,,,,,,
-CoRoT-13,,,,,,
-Kepler-926,,,,,,
-WASP-65,,,,,,
-Kepler-730,,,,,,
-Kepler-657,,,,,,
-HAT-P-55,,,,,,
-MT Pegasi,,,,,,
-18 Scorpii,,,,,,
-HD 6718,,,,,,
-Kepler-1466,,,,,,
-Kepler-1077,,,,,,
-Kepler-1637,,,,,,
-Kepler-41,,,,,,
-Kepler-929,,,,,,
-Kepler-780,,,,,,
-Kepler-9,,,,,,
-CoRoT-6,,,,,,
-Kepler-1176,,,,,,
-Kepler-1560,,,,,,
-HD 86226,,,,,,
-Kepler-1636,,,,,,
-Kepler-870,,,,,,
-Kepler-789,,,,,,
-Xi Ursae Majoris Aa,,,,,,
-HATS-21,,,,,,
-HATS-33,,,,,,
-HD 28185,,,,,,
-Kepler-817,,,,,,
-Kepler-1204,,,,,,
-Kepler-1386,,,,,,
-Kepler-843,,,,,,
-Kepler-1528,,,,,,
-Kepler-1091,,,,,,
-Kepler-170,,,,,,
-KIC 9663113,,,,,,
-Kepler-1431,,,,,,
-41 Andromedae,,,,,,
-Gamma Columbae B,,,,,,
-Eta Cassiopeiae A,,,,,,
-Kepler-630,,,,,,
-KOI-2672,,,,,,
-Kepler-836,,,,,,
-Kepler-897,,,,,,
-K2-79,,,,,,
-Kepler-715,,,,,,
-Kepler-106,,,,,,
-Kepler-1174,,,,,,
-Kepler-1525,,,,,,
-Kepler-552,,,,,,
-Kepler-1495,,,,,,
-HD 73267,,,,,,
-Kepler-1046,,,,,,
-Nu2 Lupi,,,,,,
+Kepler-344,,,,,,#NUM!,
+Kepler-1619,,,,,,#NUM!,
+Kepler-588,,,,,,#NUM!,
+HD 27631,G3IV/V,,,1.0996,,#NUM!,Radius from DR3
+HD 216770,G9VCN+1,,,0.9681,,#NUM!,Radius from DR3
+HD 98649,G3/5V,,,1.0296,,#NUM!,Radius from DR3
+Kepler-228,,,,,,#NUM!,
+Kepler-1500,,,,,,#NUM!,
+Kepler-1623,,,,,,#NUM!,
+Kepler-157,,,,,,#NUM!,
+Kepler-287,,,,,,#NUM!,
+Kepler-86,F9,,,0.9554,,#NUM!,Radius from DR3
+HD 290327,G0/G8V,,,0.9452,,#NUM!,Radius from DR3
+Kepler-108 B,,,,,,#NUM!,
+79 Ceti A,G2/8V,,,1.5957,,#NUM!,Radius from DR3
+Kepler-864,,,,,,#NUM!,
+Kepler-365,,,,,,#NUM!,
+Kepler-1099,,,,,,#NUM!,
+HD 46375 A,G9V,,,0.9365,,#NUM!,Radius from DR3
+HIP 14810,G6V,,,1.0265,,#NUM!,Radius from DR3
+Kepler-1129,,,,,,#NUM!,
+Omicron Draconis B,G9IIIFe-0.5,,,1.2945,,#NUM!,Radius from DR3
+Psi Serpentis A,G5V,,,0.9832,,#NUM!,Radius from DR3
+9 Ceti,G3V,,,1.0756,,#NUM!,Radius from DR3
+Kepler-1 A,G0V,,,1.0439,,#NUM!,Radius from DR3
+IM Pegasi (secondary component),G (likely inaccurate),,,0.5311,,#NUM!,Radius from DR3
+HN Pegasi,G0V,,,1.0462,,#NUM!,Radius from DR3
+11 Leonis Minoris A,G8Va,,,1.0071,,#NUM!,Radius from DR3
+11 Leonis Minoris B,M4,,,not available*,,#NUM!,"*was not able to find data, do later"
+Delta Indi B,F0IV,,,not available*,,#NUM!,"*was not able to find data, do later"
+Kepler-1629,,,,,,#NUM!,
+Kepler-603,,,,,,#NUM!,
+HD 7449 A,F9.5V,,,1.066,,#NUM!,Radius from DR3
+CoRoT-13,G0V,,,1.0252,,#NUM!,Radius from DR3
+Kepler-926,,,,,,#NUM!,
+WASP-65,,,,,,#NUM!,
+Kepler-730,,,,,,#NUM!,
+Kepler-657,,,,,,#NUM!,
+HAT-P-55,,,,,,#NUM!,
+MT Pegasi,G1V,,,1.0423,,#NUM!,Radius from DR3
+18 Scorpii,G2Va,,,1.0861,,#NUM!,Radius from DR3
+HD 6718,G5V,,,1.0063,,#NUM!,Radius from DR3
+Kepler-1466,,,,,,#NUM!,
+Kepler-1077,,,,,,#NUM!,
+Kepler-1637,,,,,,#NUM!,
+Kepler-41,G2V,,,1.2811,,#NUM!,Radius from DR3
+Kepler-929,,,,,,#NUM!,
+Kepler-780,,,,,,#NUM!,
+Kepler-9,G2,,,0.9626,,#NUM!,Radius from DR3
+CoRoT-6,F5V,,,1.0855,,#NUM!,Radius from DR3
+Kepler-1176,,,,,,#NUM!,
+Kepler-1560,,,,,,#NUM!,
+HD 86226,G2V,,,1.0751,,#NUM!,Radius from DR3
+Kepler-1636,,,,,,#NUM!,
+Kepler-870,,,,,,#NUM!,
+Kepler-789,,,,,,#NUM!,
+Xi Ursae Majoris Aa,F8.5:V,,,1.0162,,#NUM!,"Radius from Wikipedia, left blank in DR3, last 2 digits calculated from Stefan-Boltzmann law
+
+sqrt(1.21)*((5,772/6,005)^2)"
+HATS-21,,,,,,#NUM!,
+HATS-33,,,,,,#NUM!,
+HD 28185,G6.5IV-V,,,1.0828,,#NUM!,Radius from DR3
+Kepler-817,,,,,,#NUM!,
+Kepler-1204,,,,,,#NUM!,
+Kepler-1386,,,,,,#NUM!,
+Kepler-843,,,,,,#NUM!,
+Kepler-1528,,,,,,#NUM!,
+Kepler-1091,,,,,,#NUM!,
+Kepler-170,,,,,,#NUM!,
+KIC 9663113,,,,,,#NUM!,
+Kepler-1431,,,,,,#NUM!,
+41 Andromedae,A3m,,,~2.45,,#NUM!,"Radius left blank in Wiki, DR3, & DR2; calculated using Stefan-Boltzmann law
+
+sqrt(28.53)*((5,772/8,511)^2)"
+Gamma Columbae B,G8V,,,0.8618,,#NUM!,Radius from DR3
+Eta Cassiopeiae A,F9V,,,1.1377,,#NUM!,Radius from DR3
+Kepler-630,,,,,,#NUM!,
+KOI-2672,,,,,,#NUM!,
+Kepler-836,,,,,,#NUM!,
+Kepler-897,,,,,,#NUM!,
+K2-79,,,,,,#NUM!,
+Kepler-715,,,,,,#NUM!,
+Kepler-106,,,,,,#NUM!,
+Kepler-1174,,,,,,#NUM!,
+Kepler-1525,,,,,,#NUM!,
+Kepler-552,,,,,,#NUM!,
+Kepler-1495,,,,,,#NUM!,
+HD 73267,G5V,,,0.9374,,#NUM!,Radius from DR3
+Kepler-1046,,,,,,#NUM!,
+Nu2 Lupi,G4V,,,1.0836,,#NUM!,Radius from DR3
 "Polaris Ab
-(Alpha Ursae Minoris Ab)",,,,,,
-EPIC 220504338,,,,,,
-V817 Carinae A,,,,,,
-HD 125612,,,,,,
-Kepler-1444,,,,,,
-Kepler-1338,,,,,,
-Kepler-17,,,,,,
-Kepler-722,,,,,,
-WASP-83,,,,,,
-Kepler-466,,,,,,
-Kepler-666,,,,,,
-Kepler-1365,,,,,,
-K2-73,,,,,,
-Kepler-1562,,,,,,
-Kepler-1182,,,,,,
-Lambda Cancri B,,,,,,
-Chi1 Orionis,,,,,,
-Kepler-765,,,,,,
-Kepler-731,,,,,,
-EPIC 205117205,,,,,,
-WASP-93,,,,,,
-Kepler-840,,,,,,
-XO-5,,,,,,
-Kepler-1555,,,,,,
-Lambda Serpentis,,,,,,
-BO Microscopii,,,,,,
-Kepler-454,,,,,,
-37 Geminorum,,,,,,
-Kepler-647,,,,,,
-KOI-1860,,,,,,
-Kepler-1061,,,,,,
-CVSO 30,,,,,,
-HD 220689,,,,,,
-Kepler-1601,,,,,,
-Kepler-1561,,,,,,
-Kepler-1424,,,,,,
-Kepler-334,,,,,,
-Kepler-1429,,,,,,
-58 Eridani,,,,,,
-HAT-P-15,,,,,,
-Kepler-1088,,,,,,
-Kepler-540,,,,,,
-Kepler-1041,,,,,,
-Kepler-1594,,,,,,
-Kepler-474,,,,,,
-Kepler-822,,,,,,
-Kepler-1260,,,,,,
-Kepler-983,,,,,,
-Mu2 Cygni,,,,,,
-Zeta Tucanae,,,,,,
-2MASS J04414565+2301580,,,,,,
-Nu Arietis B,,,,,,
-WASP-5,,,,,,
-W Ursae Majoris,,,,,,
-Alpha Comae Berenices B,,,,,,
-Kepler-1187,,,,,,
-Kepler-481,,,,,,
-Kepler-1473,,,,,,
-WASP-28,,,,,,
-Kepler-520,,,,,,
-Kepler-476,,,,,,
-Kepler-796,,,,,,
-K2-74,,,,,,
-WASP-35,,,,,,
-Kepler-978,,,,,,
-36 Ursae Majoris,,,,,,
-A Velorum Ab,,,,,,
-Kepler-431,,,,,,
-Chi Tauri Bb,,,,,,
-HAT-P-36,,,,,,
-A02 Tauri,,,,,,
-HATS-32,,,,,,
-Kepler-748,,,,,,
-Kepler-110,,,,,,
-Kepler-359,,,,,,
-Kepler-355,,,,,,
-HD 216437,,,,,,
-Kepler-164,,,,,,
-Kepler-182,,,,,,
-Kepler-1391,,,,,,
-Kepler-193,,,,,,
-Kepler-58,,,,,,
-Kepler-168,,,,,,
-Kepler-392,,,,,,
-Kepler-372,,,,,,
-Kepler-1401,,,,,,
-Kepler-203,,,,,,
-Kepler-385,,,,,,
-Kepler-320,,,,,,
-HD 10647,,,,,,
-HD 33564,,,,,,
-Kepler-180,,,,,,
-Kepler-400,,,,,,
-Kepler-288,,,,,,
-c Boötis,,,,,,
-Epsilon Monocerotis B,,,,,,
-Eta1 Pictoris,,,,,,
-Kappa Reticuli A,,,,,,
-Omega Sagittarii,,,,,,
-Xi Aurigae,,,,,,
-Rho Piscium,,,,,,
-65 Aurigae,,,,,,
-3 Boötis,,,,,,
-31 Boötis,,,,,,
-HAT-P-43,,,,,,
-HAT-P-21,,,,,,
-Beta Comae Berenices,,,,,,
-HATS-25,,,,,,
-Kepler-18,,,,,,
-HD 10180,,,,,,
-Kepler-680,,,,,,
-Kepler-452,,,,,,
-Kepler-1535,,,,,,
-Kepler-835,,,,,,
-Kepler-772,,,,,,
-Kepler-497,,,,,,
-Kepler-875,,,,,,
-Kepler-1561,,,,,,
-WASP-173 A,,,,,,
-CoRoT-1,,,,,,
-Kepler-654,,,,,,
-WASP-162,,,,,,
-KIC 10024862,,,,,,
-HD 50554,,,,,,
-53 Aquarii A,,,,,,
-TW Hydrae,,,,,,
-15 Sagittae,,,,,,
-Kepler-908,,,,,,
-WASP-168,,,,,,
-Kepler-714,,,,,,
-HD 159243,,,,,,
-WASP-77 A,,,,,,
-Kepler-1316,,,,,,
-Kepler-197,,,,,,
-HD 168746,,,,,,
-Kepler-1613,,,,,,
-Kepler-792,,,,,,
-Kepler-1406,,,,,,
-HD 183263,,,,,,
-HD 12661,,,,,,
-EPIC 201403446,,,,,,
-Kepler-1255,,,,,,
-Beta Canum Venaticorum,,,,,,
-Psi Draconis A,,,,,,
-c Cygni B,,,,,,
-Kepler-602,,,,,,
-Kepler-130,,,,,,
-Kepler-874,,,,,,
-Kepler-1584,,,,,,
-Kepler-1025,,,,,,
-Kepler-1047,,,,,,
-HD 23079,,,,,,
-30 Arietis B,,,,,,
-w Herculis,,,,,,
-HD 187123,,,,,,
-Kepler-1147,,,,,,
-CoRoT-22,,,,,,
-Kepler-996,,,,,,
-Kepler-1082,,,,,,
-Kepler-609,,,,,,
-HD 178911 B,,,,,,
-RU Ursae Minoris B,,,,,,
-WASP-24,,,,,,
-DV Aquarii Ab,,,,,,
-Kepler-546,,,,,,
-CoRoT-4,F0V,,1.1247,,,Radius from DR3
+(Alpha Ursae Minoris Ab)",F7Ib,,,1.5737,,#NUM!,Radius from DR3
+EPIC 220504338,,,,,,#NUM!,
+V817 Carinae A,K?*,,,0.9173,,#NUM!,"Radius from DR3, *spectral type estimated based on temperature and radius given from DR3"
+HD 125612,G3V,,,1.1593,,#NUM!,Radius from DR3
+Kepler-1444,,,,,,#NUM!,
+Kepler-1338,,,,,,#NUM!,
+Kepler-17,G5V,,,0.9331,,#NUM!,Radius from DR3
+Kepler-722,,,,,,#NUM!,
+WASP-83,,,,,,#NUM!,
+Kepler-466,,,,,,#NUM!,
+Kepler-666,,,,,,#NUM!,
+Kepler-1365,,,,,,#NUM!,
+K2-73,,,,,,#NUM!,
+Kepler-1562,,,,,,#NUM!,
+Kepler-1182,,,,,,#NUM!,
+Lambda Cancri B,B9.5V,,,not found*,,#NUM!,"Find later, left blank in DR3"
+Chi1 Orionis (primary component),G0V,,,1.0253,,#NUM!,Radius from DR3
+Kepler-765,,,,,,#NUM!,
+Kepler-731,,,,,,#NUM!,
+EPIC 205117205,,,,,,#NUM!,
+WASP-93,,,,,,#NUM!,
+Kepler-840,,,,,,#NUM!,
+XO-5,G7,,,1.1008,,#NUM!,Radius from DR3
+Kepler-1555,,,,,,#NUM!,
+Lambda Serpentis,G0V,,,1.3603,,#NUM!,Radius from DR3
+BO Microscopii,K3Ve,,,1.42,,#NUM!,"Radius from DR2, left blank in DR3"
+Kepler-454,,,,,,#NUM!,
+37 Geminorum,G0V,,,1.105,,#NUM!,Radius from DR3
+Kepler-647,,,,,,#NUM!,
+KOI-1860,,,,,,#NUM!,
+Kepler-1061,,,,,,#NUM!,
+CVSO 30,M3,,,1.31,,#NUM!,"Radius from DR2, left blank in DR3"
+HD 220689,G3V,,,1.1946,,#NUM!,Radius from DR3
+Kepler-1601,,,,,,#NUM!,
+Kepler-1561,,,,,,#NUM!,
+Kepler-1424,,,,,,#NUM!,
+Kepler-334,,,,,,#NUM!,
+Kepler-1429,,,,,,#NUM!,
+58 Eridani,G1.5VCh-0.5,,,1.0039,,#NUM!,Radius from DR3
+HAT-P-15,G5,,,1.1363,,#NUM!,Radius from DR3
+Kepler-1088,,,,,,#NUM!,
+Kepler-540,,,,,,#NUM!,
+Kepler-1041,,,,,,#NUM!,
+Kepler-1594,,,,,,#NUM!,
+Kepler-474,,,,,,#NUM!,
+Kepler-822,,,,,,#NUM!,
+Kepler-1260,,,,,,#NUM!,
+Kepler-983,,,,,,#NUM!,
+Mu2 Cygni,G2V,,,1.08,,#NUM!,"Radius left blank in DR3 & DR2; from Wikipedia, consistent with Stefan-Boltzmann law"
+Zeta Tucanae,F9.5V,,,1.1012,,#NUM!,Radius from DR3
+2MASS J04414565+2301580,M4.3,,,1.0389,,#NUM!,Radius from DR3
+Nu Arietis B,G*,,,not found*,,#NUM!,"*estimated using Teff and mass data
+*do later"
+WASP-5,G4V,,,1.111,,#NUM!,Radius from DR3
+W Ursae Majoris A,F8Vp,,,1.092,,#NUM!,[2101.10680] Physical parameters of close binary systems: VIII
+W Ursae Majoris B,F8Vp,,,0.792,,#NUM!,[2101.10680] Physical parameters of close binary systems: VIII
+Alpha Comae Berenices B,F6V,,,~1.08,,#NUM!,"Calculated using Stefan-Boltzmann law
+
+sqrt(1.75)*((5,772/6,378)^2)"
+Kepler-1187,,,,,,#NUM!,
+Kepler-481,,,,,,#NUM!,
+Kepler-1473,,,,,,#NUM!,
+WASP-28,F8-G0,339.2387,1,1.1032,1.548,0.1898,Gaia DR3
+Kepler-520,,,,,,#NUM!,
+Kepler-476,,,,,,#NUM!,
+Kepler-796,,,,,,#NUM!,
+K2-74,,,,,,#NUM!,
+WASP-35,G0V,199.3503,1.02,1.1451,1.435,0.1569,Gaia DR3
+Kepler-978,,,,,,#NUM!,
+36 Ursae Majoris A,F8V,12.9421,1.096,1.1713,1.687,0.2271,Gaia DR3
+36 Ursae Majoris B,K7Ve,12.919,,0.65,0.111,-0.9547,Luminosity & radius is approx.
+A Velorum Ab,,,,,,#NUM!,
+Kepler-431,,,,,,#NUM!,
+Chi Tauri Bb,,,,,,#NUM!,
+HAT-P-36,,,,,,#NUM!,
+A02 Tauri,,,,,,#NUM!,
+HATS-32,,,,,,#NUM!,
+Kepler-748,,,,,,#NUM!,
+Kepler-110,,,,,,#NUM!,
+Kepler-359,,,,,,#NUM!,
+Kepler-355,,,,,,#NUM!,
+HD 216437,,,,,,#NUM!,
+Kepler-164,,,,,,#NUM!,
+Kepler-182,,,,,,#NUM!,
+Kepler-1391,,,,,,#NUM!,
+Kepler-193,,,,,,#NUM!,
+Kepler-58,,,,,,#NUM!,
+Kepler-168,,,,,,#NUM!,
+Kepler-392,,,,,,#NUM!,
+Kepler-372,,,,,,#NUM!,
+Kepler-1401,,,,,,#NUM!,
+Kepler-203,,,,,,#NUM!,
+Kepler-385,,,,,,#NUM!,
+Kepler-320,,,,,,#NUM!,
+HD 10647,,,,,,#NUM!,
+HD 33564,,,,,,#NUM!,
+Kepler-180,,,,,,#NUM!,
+Kepler-400,,,,,,#NUM!,
+Kepler-288,,,,,,#NUM!,
+c Boötis,,,,,,#NUM!,
+Epsilon Monocerotis B,,,,,,#NUM!,
+Eta1 Pictoris,,,,,,#NUM!,
+Kappa Reticuli A,,,,,,#NUM!,
+Omega Sagittarii,,,,,,#NUM!,
+Xi Aurigae,,,,,,#NUM!,
+Rho Piscium,,,,,,#NUM!,
+65 Aurigae,,,,,,#NUM!,
+3 Boötis,,,,,,#NUM!,
+31 Boötis,,,,,,#NUM!,
+HAT-P-43,,,,,,#NUM!,
+HAT-P-21,,,,,,#NUM!,
+Beta Comae Berenices,,,,,,#NUM!,
+HATS-25,,,,,,#NUM!,
+Kepler-18,,,,,,#NUM!,
+HD 10180,,,,,,#NUM!,
+Kepler-680,,,,,,#NUM!,
+Kepler-452,,,,,,#NUM!,
+Kepler-1535,,,,,,#NUM!,
+Kepler-835,,,,,,#NUM!,
+Kepler-772,,,,,,#NUM!,
+Kepler-497,,,,,,#NUM!,
+Kepler-875,,,,,,#NUM!,
+Kepler-1561,,,,,,#NUM!,
+WASP-173 A,,,,,,#NUM!,
+CoRoT-1,,,,,,#NUM!,
+Kepler-654,,,,,,#NUM!,
+WASP-162,,,,,,#NUM!,
+KIC 10024862,,,,,,#NUM!,
+HD 50554,,,,,,#NUM!,
+53 Aquarii A,,,,,,#NUM!,
+TW Hydrae,,,,,,#NUM!,
+15 Sagittae,,,,,,#NUM!,
+Kepler-908,,,,,,#NUM!,
+WASP-168,,,,,,#NUM!,
+Kepler-714,,,,,,#NUM!,
+HD 159243,,,,,,#NUM!,
+WASP-77 A,,,,,,#NUM!,
+Kepler-1316,,,,,,#NUM!,
+Kepler-197,,,,,,#NUM!,
+HD 168746,,,,,,#NUM!,
+Kepler-1613,,,,,,#NUM!,
+Kepler-792,,,,,,#NUM!,
+Kepler-1406,,,,,,#NUM!,
+HD 183263,,,,,,#NUM!,
+HD 12661,,,,,,#NUM!,
+EPIC 201403446,,,,,,#NUM!,
+Kepler-1255,,,,,,#NUM!,
+Beta Canum Venaticorum,,,,,,#NUM!,
+Psi Draconis A,,,,,,#NUM!,
+c Cygni B,,,,,,#NUM!,
+Kepler-602,,,,,,#NUM!,
+Kepler-130,,,,,,#NUM!,
+Kepler-874,,,,,,#NUM!,
+Kepler-1584,,,,,,#NUM!,
+Kepler-1025,,,,,,#NUM!,
+Kepler-1047,,,,,,#NUM!,
+HD 23079,,,,,,#NUM!,
+30 Arietis B,,,,,,#NUM!,
+w Herculis,,,,,,#NUM!,
+HD 187123,,,,,,#NUM!,
+Kepler-1147,,,,,,#NUM!,
+CoRoT-22,,,,,,#NUM!,
+Kepler-996,,,,,,#NUM!,
+Kepler-1082,,,,,,#NUM!,
+Kepler-609,,,,,,#NUM!,
+HD 178911 B,,,,,,#NUM!,
+RU Ursae Minoris B,,,,,,#NUM!,
+WASP-24,,,,,,#NUM!,
+DV Aquarii Ab,,,,,,#NUM!,
+Kepler-546,,,,,,#NUM!,
+CoRoT-4,F0V,,,1.1247,,#NUM!,Radius from DR3
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
+,,,,,,#NUM!,
