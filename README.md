@@ -1,5 +1,5 @@
 ##
-# Stellar Radii
+# Stellar Data
 This repo acts as a database folder for collecting stellar properties for all classes of notable stars, from the smallest red dwarfs to main-sequence stars to the largest known RSGs. 
 As of 2024, there are two iterations or versions of the collection process.
 - Version 1 (1 Apr - 22 Dec 2023)
