@@ -1,6 +1,6 @@
 ##
 # Stellar Radii
-This repo acts as a database folder for collecting stellar radii and spectral classifications for all types of stars, from red dwarfs to RSGs. 
+This repo acts as a database folder for collecting stellar properties for all classes of notable stars, from the smallest red dwarfs to main-sequence stars to the largest known RSGs. 
 As of 2024, there are two iterations or versions of the collection process.
 - Version 1 (1 Apr - 22 Dec 2023)
   - In V1, 447 notable stars, their radii, and spectral classes were listed. Some of the stars listed include white dwarfs, which are technically not considered to be stars.
