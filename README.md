@@ -1,5 +1,5 @@
 ##
-# Stellar Radii
+# Stellar Data
 This repo acts as a database folder for collecting stellar properties for all classes of notable stars, from the smallest red dwarfs to main-sequence stars to the largest known RSGs. 
 - calc.py is a Python script that can calculate different properties of a star based on given input parameters and methods. Mass and effective temperature calculators will be added later.
 
