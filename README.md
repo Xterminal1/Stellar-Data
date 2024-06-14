@@ -1,6 +1,8 @@
 ##
 # Stellar Data
 This repo acts as a database folder for collecting stellar properties for all classes of notable stars, from the smallest red dwarfs to main-sequence stars to the largest known RSGs. 
+- calc.py is a Python script that can calculate different properties of a star based on given input parameters and methods. Mass and effective temperature calculators will be added later.
+
 As of 2024, there are two iterations or versions of the collection process.
 - Version 1 (1 Apr - 22 Dec 2023)
   - In V1, 447 notable stars, their radii, and spectral classes were listed. Some of the stars listed include white dwarfs, which are technically not considered to be stars.
@@ -12,3 +14,5 @@ As of 2024, there are two iterations or versions of the collection process.
   - The stellar radii for main-sequence stars dimmer than an apparent magnitude (V) of ~3 come from the Gaia catalogues, specifically DR3 and DR2.
   - Main-sequence stars brighter than ~3V have their radii derived from accurate sources that were available.
   - The stellar radii for stars above ~300 solar radii come from scientific papers for higher precision.
+
+NOTE: Currently as of 14 June 2024, the focus is on collecting data on supergiant and hypergiant stars.
