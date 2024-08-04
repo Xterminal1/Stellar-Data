@@ -12,7 +12,7 @@ As of 2024, there are two iterations or versions of the collection process.
   - V2 features twice as many notable stars as V1, and it does not include white dwarfs, brown dwarfs, neutron stars, pulsars, magnetars, etc. in the database as they are technically not stars. This is because these objects do not produce energy through nuclear fusion.
   - Most spectral classes for stars in V2 are from SIMBAD. However, if there is a newer and much more accurate spectral class listed in a source on Wikipedia, then it is used instead of SIMBAD's spectral class for the star.
   - The stellar radii for main-sequence stars dimmer than an apparent magnitude (V) of ~3 come from the Gaia catalogues, specifically DR3 and DR2.
-  - Main-sequence stars brighter than ~3V have their radii derived from accurate sources that were available.
+  - Main-sequence stars brighter than ~3 in the V band have their radii derived from accurate sources that were available.
   - The stellar radii for stars above ~300 solar radii come from scientific papers for higher precision.
 
 NOTE: Currently as of 14 June 2024, the focus is on collecting stellar radii on the largest known supergiant and hypergiant stars.
